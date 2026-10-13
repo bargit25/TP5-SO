@@ -65,7 +65,7 @@ def filosofo(id, rondas=3):
         # =========================================================================
         
         # PISTA DE IMPLEMENTACIÓN ASIMÉTRICA:
-        if id == NUM_FILOSOFOS - 1:
+        if id == NUM_FILOSOFOS - 1 or id % 2 != 0:
             primero, segundo = tenedor_der, tenedor_izq
         else:
             primero, segundo = tenedor_izq, tenedor_der
